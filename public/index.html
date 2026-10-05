@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="ha">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Sajjad Imran Catering</title>
+    <script src="https://sdk.minepi.com/pi-sdk.js"></script>
+    <link rel="stylesheet" href="/styles.css" />
+  </head>
+  <body>
+    <div class="container">
+      <h1>Sajjad Imran</h1>
+      <div class="subtitle">Kofar Gadar Mamata, Nassarawa, Kano (No. 1550)</div>
+
+      <div class="info-card">
+        <p><strong>Lambar Wayar Sayo / WhatsApp:</strong> 08136429301</p>
+        <p><strong>Adireshi:</strong> No. 1550, Kofar Gadar Mamata, Kano</p>
+      </div>
+
+      <div class="opay-box">
+        OPay Account: 7016289293 (Sajjad Imran)
+      </div>
+
+      <div class="menu-section">
+        <div class="menu-box">
+          <h3>Class One</h3>
+          <div class="desc">Standard Plate & Drinks</div>
+          <div class="price">20,000 NGN</div>
+          <button
+            class="btn small"
+            onclick="selectItem('Sajjad Imran - Standard Plate', 0.000003)"
+          >
+            Oda (Pi)
+          </button>
+        </div>
+
+        <div class="menu-box">
+          <h3>VIP - Class Two</h3>
+          <div class="desc">Premium Experience</div>
+          <div class="price">50,000 NGN</div>
+          <button
+            class="btn small"
+            onclick="selectItem('Sajjad Imran - Premium Experience', 0.000006)"
+          >
+            Oda (Pi)
+          </button>
+        </div>
+      </div>
+
+      <button class="btn" onclick="startPayment()">Biya da Pi Network</button>
+
+      <div id="statusBox" class="status-box"></div>
+    </div>
+
+    <script src="/app.js"></script>
+  </body>
+</html>

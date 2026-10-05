@@ -1,0 +1,152 @@
+:root {
+  --bg: #121212;
+  --panel: #1e1e1e;
+  --panel-2: #2a2a2a;
+  --gold: #d4af37;
+  --gold-dark: #b89728;
+  --text: #f5f5f5;
+  --muted: #aaa;
+  --success: #00b900;
+  --danger: #ff4d4d;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  padding: 20px;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  background-color: var(--bg);
+  color: var(--text);
+}
+
+.container {
+  max-width: 620px;
+  margin: 0 auto;
+  background: var(--panel);
+  padding: 25px;
+  border-radius: 12px;
+  box-shadow: 0 4px 15px rgba(212, 175, 55, 0.2);
+  border: 1px solid var(--gold);
+}
+
+h1 {
+  color: var(--gold);
+  text-align: center;
+  text-transform: uppercase;
+  margin-bottom: 5px;
+  font-size: 24px;
+}
+
+.subtitle {
+  text-align: center;
+  color: var(--muted);
+  font-size: 14px;
+  margin-bottom: 20px;
+}
+
+.info-card {
+  background: var(--panel-2);
+  padding: 15px;
+  border-radius: 8px;
+  margin-bottom: 20px;
+  border-left: 4px solid var(--gold);
+}
+
+.info-card p {
+  margin: 8px 0;
+  font-size: 15px;
+}
+
+.menu-section {
+  display: flex;
+  gap: 15px;
+  margin-bottom: 20px;
+}
+
+.menu-box {
+  flex: 1;
+  background: var(--panel-2);
+  border: 1px solid var(--gold);
+  border-radius: 8px;
+  padding: 15px;
+  text-align: center;
+}
+
+.menu-box h3 {
+  color: var(--gold);
+  font-size: 16px;
+  margin-top: 0;
+}
+
+.price {
+  font-size: 18px;
+  font-weight: bold;
+  color: #fff;
+  margin: 10px 0;
+}
+
+.desc {
+  font-size: 13px;
+  color: #ccc;
+}
+
+.opay-box {
+  background: var(--success);
+  color: #fff;
+  padding: 12px;
+  border-radius: 8px;
+  text-align: center;
+  font-weight: bold;
+  margin-bottom: 20px;
+}
+
+.btn {
+  display: block;
+  width: 100%;
+  background: var(--gold);
+  color: #121212;
+  padding: 14px;
+  border: none;
+  border-radius: 8px;
+  font-size: 16px;
+  font-weight: bold;
+  cursor: pointer;
+  text-align: center;
+  transition: 0.3s;
+  margin-top: 10px;
+}
+
+.btn:hover {
+  background: var(--gold-dark);
+}
+
+.btn.small {
+  padding: 8px;
+  font-size: 14px;
+}
+
+.status-box {
+  display: none;
+  margin-top: 16px;
+  padding: 12px;
+  border-radius: 8px;
+  font-size: 14px;
+  border: 1px solid var(--gold);
+  background: rgba(212, 175, 55, 0.1);
+  color: var(--text);
+}
+
+.status-box.error {
+  border-color: var(--danger);
+  background: rgba(255, 77, 77, 0.08);
+  color: #ffdede;
+}
+
+@media (max-width: 550px) {
+  .menu-section {
+    flex-direction: column;
+  }
+}
